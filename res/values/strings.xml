@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MainActivity</string>
+     <string name="number1">Number 1</string>
+     <string name="number2">Number 2</string>
+     <string name="display1">Display 1</string>
+</resources>
