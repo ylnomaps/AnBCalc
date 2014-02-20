@@ -4,4 +4,8 @@
      <string name="number1">Number 1</string>
      <string name="number2">Number 2</string>
      <string name="display1">0</string>
+      <string name="display2">0</string>
+     <string name="operator">+</string>
+     <string name="ist">=</string>
+     <string name="ergebnis">0</string>
 </resources>
