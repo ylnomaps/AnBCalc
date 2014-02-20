@@ -3,7 +3,7 @@
       package="net46.andreasb.anbcalc"
       android:versionCode="1"
       android:versionName="1.0">
-<uses-sdk android:maxSdkVersion="19" android:targetSdkVersion="19" android:minSdkVersion="8"/>
+<uses-sdk android:maxSdkVersion="19" android:targetSdkVersion="19" android:minSdkVersion="11"/>
 
     <application 
         android:allowBackup="true"

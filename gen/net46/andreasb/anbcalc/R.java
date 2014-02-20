@@ -30,7 +30,7 @@ public final class R {
         public static final int display2=0x7f050002;
         public static final int dividiert=0x7f050017;
         public static final int ergebnis=0x7f050004;
-        public static final int ist=0x7f050003;
+        public static final int istgleich=0x7f050003;
         public static final int mal=0x7f050018;
         public static final int minus=0x7f050016;
         public static final int operator=0x7f050001;
