@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
 		operator1 = (TextView) findViewById(R.id.operator);
 		operator1.setText("+");
 		text3 = (TextView) findViewById(R.id.ergebnis);
-		text3.setText("result");
+		text3.setText("0");
 
 	}
 
@@ -63,37 +63,57 @@ public class MainActivity extends Activity {
 			if (text1.getText() != "0")
 
 			{
-				text1.setText("");
+				text1.setText("0");
 			}
 		} else if (text2.hasFocus()) {
 			if (text2.getText() != "0")
 
 			{
-				text2.setText("");
+				text2.setText("0");
 			}
 		}
 	}
-	public void operator_click(View sender) {
+	
+	String opp = "";
+	public String operator_click(View sender) {
 		Button bt = (Button) sender;
 
 		operator1.setText(bt.getText());
+		opp= bt.getText().toString();
+		return opp;
 	}
-	public void ist_gleich( View sender) {
-		Button bt3 = (Button) sender;
-		int ergebnis = 0;
+	
+	
+	
+	
+	public void ist_gleich(View sender) {
+		Button bt = (Button) sender;
 		
+
 		String eins = text1.getText().toString();
 		int eins1 = Integer.parseInt(eins);
 		String zwei = text2.getText().toString();
 		int zwei2 = Integer.parseInt(zwei);
-		ergebnis= eins1+zwei2;
+		int ergebnis = 0;
+		if (opp.equals("+")) { 
+		ergebnis = eins1+zwei2; }
+		else if (opp.equals("-")) {
+			ergebnis = eins1-zwei2; }
+		else if (opp.equals("/")) {
+			ergebnis = eins1/zwei2; } 
+				else {
+				ergebnis = eins1*zwei2;  }
+	
+		System.out.print(ergebnis); 
 		
-		String stringergebnis = "";
-		text3.setText(String.valueOf(ergebnis));
+		 text3.setText(String.valueOf(ergebnis)); return; }
 		
-	}
+		
+		
+}
 
 	
 
-}
+	
+
 

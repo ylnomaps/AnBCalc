@@ -25,9 +25,10 @@
             android:id="@+id/operator"
             android:layout_width="50dp"
             android:layout_height="50dp"
-
+            android:clickable="false"
             android:ems="10"
-            android:hint="@string/operator"
+            android:inputType="text"
+            android:text="+"
             android:textColor="#B40404" />
 
         <EditText
